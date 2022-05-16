@@ -1,4 +1,100 @@
 .landing-style{
   min-height: 100vh;
-  background-color: green;
+  background-color: var(--timberwolf);
+}
+
+.welcome-style{
+  height: 150px;
+  -webkit-box-shadow: 5px 5px 15px 4px rgba(0,0,0,0.55); 
+  box-shadow: 5px 5px 15px 4px rgba(0,0,0,0.55);
+}
+
+.cards-style{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  -webkit-box-shadow: 5px 5px 15px 4px rgba(0,0,0,0.55); 
+  box-shadow: 5px 5px 15px 4px rgba(0,0,0,0.55);
+}
+
+.img-style{
+  width: 200px;
+  height: 150px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 5px 15px 4px rgba(0,0,0,0.55); 
+  box-shadow: 5px 5px 15px 4px rgba(0,0,0,0.55);
+  border: solid black 2px;
+  margin-right: 1rem;
+}
+
+.img-style_add{
+  -moz-transform: rotateY(360deg);
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+  transition: 200ms;
+  border: solid rgb(5, 241, 5) 2px;
+}
+
+.img-style_delete{
+  -moz-transform: rotateX(360deg);
+  -webkit-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+  transition: 200ms;
+  border: solid red 2px;
+}
+
+.button-style{
+  align-items: center;
+  -webkit-box-shadow: 5px 5px 15px 4px rgba(0,0,0,0.55); 
+  box-shadow: 5px 5px 15px 4px rgba(0,0,0,0.55);
+  height: 50px;
+  margin-left: auto;
+}
+
+.iconStyle{
+  transform: scale(1.4);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .modalBtn-style{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cards-style{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .button-style{
+    margin-left: 0 !important;
+  }
+  .img-style{
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+  .modalBtn-style{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-box-shadow: -1px 5px 22px 14px rgba(0,0,0,0.67); 
+    box-shadow: -1px 5px 22px 14px rgba(0,0,0,0.67);  
+    background-color: var(--timberwolf);
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .iconCart-size{
+    transform: scale(1.5);
+  }
+  .landing-style{
+    padding-bottom: 100px;
+  }
 }
